@@ -145,3 +145,24 @@ section {
 .full-image {
     border: 1px solid #808080;;
 }
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%, #474bff);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    animation: spinner-zp9dbg 1s infinite linear;
+    position: fixed;
+    left: 50%;
+}
+
+@keyframes spinner-zp9dbg {
+    to {
+        transform: rotate(1turn);
+    }
+}
